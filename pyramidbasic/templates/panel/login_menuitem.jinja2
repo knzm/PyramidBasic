@@ -1,0 +1,12 @@
+{%if userid -%}
+<li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ userid }}</a>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="{{ logout_url }}">Logout</a></li>
+  </ul>
+</li>
+{%- else -%}
+<li>
+<a href="{{ login_url }}">Login</a>
+</li>
+{%- endif %}

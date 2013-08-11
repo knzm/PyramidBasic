@@ -1,0 +1,14 @@
+{% extends main_template %}
+
+{%- block contents -%}
+{{ form|safe }}
+{%- endblock -%}
+
+{% block bottom -%}
+{% for js_link in js_links -%}
+<script type="text/javascript" src="{{ layout.deform_static_url(js_link) }}"></script>
+{%- endfor %}
+{% for css_link in css_links -%}
+<link rel="stylesheet" href="{{ layout.deform_static_url(css_link) }}" />
+{%- endfor %}
+{%- endblock %}
