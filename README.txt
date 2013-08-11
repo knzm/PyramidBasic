@@ -10,5 +10,7 @@ Getting Started
 
 - $venv/bin/alembic upgrade head
 
+- $venv/bin/pyramidbasic createuser development.ini 
+
 - $venv/bin/pserve development.ini
 

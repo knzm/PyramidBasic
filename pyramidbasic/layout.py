@@ -7,7 +7,7 @@ from js.modernizr import modernizr
 from js.bootstrap import bootstrap
 
 
-@layout_config(template='pyramidbasic:templates/layout.jinja2')
+@layout_config(template='layout.jinja2')
 class MyLayout(object):
     page_title = "Pyramid Basic App"
 
